@@ -2,23 +2,11 @@
     <head></head>
     <body>
         <div id="app"></div>
+        <script src="https://unpkg.com/react@17/umd/react.development.js"></script>
+        <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"></script>
         <script type="text/javascript">
-            // select div element with 'app' id
             const app = document.getElementById("app");
-
-            // create a new h1 element
-            const header = document.createElement("h1");
-
-            // create a text node for the h1 element
-            const headerContent = document.createTextNode(
-                "Develop. Preview. 🚀",
-            );
-
-            // append the text to the h1 element
-            header.appendChild(headerContent);
-
-            // place the h1 element inside the div
-            app.appendChild(header);
+            ReactDOM.render(<h1>Develop. Preview. Ship. 🚀</h1>, app);
         </script>
     </body>
 </html>
