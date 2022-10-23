@@ -8,17 +8,18 @@
         <script type="text/jsx">
             const app = document.getElementById("app");
             
-            function Header() {
-                return <h1>Develop. Preview. Ship. 🚀</h1>;
+            function Header(props) {
+                return <h1>{props.title}</h1>;
             }
 
             function HomePage() {
                 return (
                     <>
                         {/* Nesting Header component */}
-                        <Header />
+                        <Header title="React 💙" />
+                        <Header title="Develop. Preview. Ship. 🚀" />
                     </>
-                )
+                );
             }
 
             ReactDOM.render(<HomePage />, app);
