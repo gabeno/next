@@ -7,10 +7,21 @@
         <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
         <script type="text/jsx">
             const app = document.getElementById("app");
+            
             function Header() {
                 return <h1>Develop. Preview. Ship. 🚀</h1>;
             }
-            ReactDOM.render(<Header />, app);
+
+            function HomePage() {
+                return (
+                    <>
+                        {/* Nesting Header component */}
+                        <Header />
+                    </>
+                )
+            }
+
+            ReactDOM.render(<HomePage />, app);
         </script>
     </body>
 </html>
